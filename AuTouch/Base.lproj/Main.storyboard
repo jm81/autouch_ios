@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AuTouch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,10 +15,267 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZK-ay-hOr">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.35238140821456909" green="0.87204992771148682" blue="0.33171659708023071" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dYu-L3-wgz" appends="YES" id="aoK-c7-A9h"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKR-gf-fls">
+                                <rect key="frame" x="200" y="0.0" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.22974985837936401" green="0.2079768180847168" blue="0.62788581848144531" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4xG-qX-Fi5" appends="YES" id="Gyu-L3-5Ho"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIB-6h-a9H">
+                                <rect key="frame" x="400" y="0.0" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.62146711349487305" green="0.21783442795276642" blue="0.23223970830440521" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iz1-PA-RGd" appends="YES" id="Odn-BY-UKy"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hU-ju-pbH">
+                                <rect key="frame" x="0.0" y="150" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.5233338475227356" green="0.21490353345870972" blue="0.83808767795562744" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lfk-mu-Qaf" appends="YES" id="12Z-uV-kFW"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c52-1t-AjZ">
+                                <rect key="frame" x="200" y="150" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.83287429809570312" green="0.52962464094161987" blue="0.26364710927009583" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6XX-OZ-gzm" appends="YES" id="DTs-0v-iSz"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRE-sB-jQ8">
+                                <rect key="frame" x="400" y="150" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.2878633439540863" green="0.8561827540397644" blue="0.53019726276397705" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="uqo-aK-7YL" appends="YES" id="x7s-4I-Wrd"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHS-qq-P6f">
+                                <rect key="frame" x="0.0" y="300" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.79450976848602295" green="0.34193083643913269" blue="0.16811631619930267" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Kpz-B9-YoP" appends="YES" id="b3E-BC-mqy"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjL-jv-Y4l">
+                                <rect key="frame" x="200" y="300" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.20207233726978302" green="0.82311046123504639" blue="0.35131484270095825" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="W2r-OR-Ke0" appends="YES" id="RFS-af-BFF"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkR-Fx-Aay">
+                                <rect key="frame" x="400" y="300" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.34509563446044922" green="0.097547255456447601" blue="0.80183881521224976" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ron-rW-VdJ" appends="YES" id="gLp-F5-ve2"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RE-ks-5rB">
+                                <rect key="frame" x="0.0" y="450" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.18648388981819153" green="0.77540761232376099" blue="0.76670783758163452" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mUC-pe-oJg" appends="YES" id="xVa-bh-fLC"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeR-Fn-Xci">
+                                <rect key="frame" x="200" y="450" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.16199219226837158" green="0.10534269362688065" blue="0.80171334743499756" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mXm-ng-rla" appends="YES" id="te1-1W-0zN"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5s-aj-97i">
+                                <rect key="frame" x="400" y="450" width="200" height="150"/>
+                                <color key="backgroundColor" red="0.75676405429840088" green="0.086053602397441864" blue="0.53777635097503662" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Jrf-cV-fiP" appends="YES" id="z6A-za-M4q"/>
+                                </connections>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pRE-sB-jQ8" firstAttribute="top" secondItem="QIB-6h-a9H" secondAttribute="bottom" id="0Uu-6E-Oyf"/>
+                            <constraint firstItem="c52-1t-AjZ" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="18J-pP-5w0"/>
+                            <constraint firstItem="bHS-qq-P6f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Oh-3v-NhX"/>
+                            <constraint firstItem="pRE-sB-jQ8" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="2ko-4k-Jas"/>
+                            <constraint firstItem="bHS-qq-P6f" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="3zc-LC-Ojd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VeR-Fn-Xci" secondAttribute="bottom" id="42B-4D-N3a"/>
+                            <constraint firstItem="c52-1t-AjZ" firstAttribute="leading" secondItem="3hU-ju-pbH" secondAttribute="trailing" id="4UT-5M-pKG"/>
+                            <constraint firstItem="VeR-Fn-Xci" firstAttribute="top" secondItem="MjL-jv-Y4l" secondAttribute="bottom" id="4bG-9H-Dqx"/>
+                            <constraint firstItem="NZK-ay-hOr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5ij-q3-l08"/>
+                            <constraint firstAttribute="trailing" secondItem="LkR-Fx-Aay" secondAttribute="trailing" id="AX7-PH-l5R"/>
+                            <constraint firstItem="n5s-aj-97i" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="BQW-3z-BCI"/>
+                            <constraint firstItem="pRE-sB-jQ8" firstAttribute="leading" secondItem="c52-1t-AjZ" secondAttribute="trailing" id="BT7-CV-0pB"/>
+                            <constraint firstItem="VeR-Fn-Xci" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="BzG-BV-yFo"/>
+                            <constraint firstAttribute="trailing" secondItem="n5s-aj-97i" secondAttribute="trailing" id="CZp-m2-drV"/>
+                            <constraint firstAttribute="trailing" secondItem="QIB-6h-a9H" secondAttribute="trailing" id="DZB-f2-Tpb"/>
+                            <constraint firstAttribute="trailing" secondItem="pRE-sB-jQ8" secondAttribute="trailing" id="Epq-ra-3r8"/>
+                            <constraint firstItem="5RE-ks-5rB" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="GA6-CB-yog"/>
+                            <constraint firstItem="n5s-aj-97i" firstAttribute="leading" secondItem="VeR-Fn-Xci" secondAttribute="trailing" id="GRZ-OY-XDK"/>
+                            <constraint firstItem="3hU-ju-pbH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HoI-KY-ch5"/>
+                            <constraint firstItem="MjL-jv-Y4l" firstAttribute="leading" secondItem="bHS-qq-P6f" secondAttribute="trailing" id="Jp6-IV-aw8"/>
+                            <constraint firstItem="NZK-ay-hOr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MiW-bL-MJi"/>
+                            <constraint firstItem="QIB-6h-a9H" firstAttribute="leading" secondItem="nKR-gf-fls" secondAttribute="trailing" id="NoX-rK-8uG"/>
+                            <constraint firstItem="5RE-ks-5rB" firstAttribute="top" secondItem="bHS-qq-P6f" secondAttribute="bottom" id="OW2-je-geP"/>
+                            <constraint firstItem="QIB-6h-a9H" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="OiW-z1-K8G"/>
+                            <constraint firstItem="VeR-Fn-Xci" firstAttribute="leading" secondItem="5RE-ks-5rB" secondAttribute="trailing" id="PbK-dL-bnA"/>
+                            <constraint firstItem="pRE-sB-jQ8" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="SzD-KH-Abh"/>
+                            <constraint firstItem="3hU-ju-pbH" firstAttribute="top" secondItem="NZK-ay-hOr" secondAttribute="bottom" id="UDC-gg-VSo"/>
+                            <constraint firstItem="nKR-gf-fls" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="UgJ-j7-63T"/>
+                            <constraint firstItem="bHS-qq-P6f" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="Vfu-qJ-TxL"/>
+                            <constraint firstItem="VeR-Fn-Xci" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="W7l-6z-JKc"/>
+                            <constraint firstItem="bHS-qq-P6f" firstAttribute="top" secondItem="3hU-ju-pbH" secondAttribute="bottom" id="Wca-h4-JOS"/>
+                            <constraint firstItem="MjL-jv-Y4l" firstAttribute="top" secondItem="c52-1t-AjZ" secondAttribute="bottom" id="aUI-na-2jB"/>
+                            <constraint firstItem="LkR-Fx-Aay" firstAttribute="leading" secondItem="MjL-jv-Y4l" secondAttribute="trailing" id="bhR-xT-2AP"/>
+                            <constraint firstItem="5RE-ks-5rB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cEQ-T8-kmb"/>
+                            <constraint firstItem="c52-1t-AjZ" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="d4a-K3-BSU"/>
+                            <constraint firstItem="QIB-6h-a9H" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dQ1-V9-f1d"/>
+                            <constraint firstItem="nKR-gf-fls" firstAttribute="leading" secondItem="NZK-ay-hOr" secondAttribute="trailing" id="hQq-YX-gCB"/>
+                            <constraint firstItem="3hU-ju-pbH" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="hby-dh-6KL"/>
+                            <constraint firstItem="QIB-6h-a9H" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="j5y-dW-c00"/>
+                            <constraint firstItem="nKR-gf-fls" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="jT2-GJ-4ew"/>
+                            <constraint firstItem="MjL-jv-Y4l" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="kWO-S4-crS"/>
+                            <constraint firstItem="nKR-gf-fls" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mfr-NF-dTt"/>
+                            <constraint firstItem="LkR-Fx-Aay" firstAttribute="top" secondItem="pRE-sB-jQ8" secondAttribute="bottom" id="nhL-wQ-cDn"/>
+                            <constraint firstItem="5RE-ks-5rB" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="ocj-qb-g9D"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n5s-aj-97i" secondAttribute="bottom" id="pSH-iQ-jyy"/>
+                            <constraint firstItem="3hU-ju-pbH" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="qJ1-JQ-WNx"/>
+                            <constraint firstItem="MjL-jv-Y4l" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="v2F-eX-fPM"/>
+                            <constraint firstItem="LkR-Fx-Aay" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="wAl-ae-rzT"/>
+                            <constraint firstItem="n5s-aj-97i" firstAttribute="height" secondItem="NZK-ay-hOr" secondAttribute="height" id="x4s-0Q-4uA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5RE-ks-5rB" secondAttribute="bottom" id="xIQ-Dh-62t"/>
+                            <constraint firstItem="LkR-Fx-Aay" firstAttribute="width" secondItem="NZK-ay-hOr" secondAttribute="width" id="zSt-Vc-1WP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="box0" destination="NZK-ay-hOr" id="4IP-Lh-Wlp"/>
+                        <outlet property="box1" destination="nKR-gf-fls" id="1Co-gl-9Hh"/>
+                        <outlet property="box10" destination="VeR-Fn-Xci" id="od0-xU-Z3D"/>
+                        <outlet property="box11" destination="n5s-aj-97i" id="3wm-ea-1ut"/>
+                        <outlet property="box2" destination="QIB-6h-a9H" id="nSg-Jq-4Te"/>
+                        <outlet property="box3" destination="3hU-ju-pbH" id="fW2-W5-9Qo"/>
+                        <outlet property="box4" destination="c52-1t-AjZ" id="QcG-8j-DlP"/>
+                        <outlet property="box5" destination="pRE-sB-jQ8" id="ePA-Gx-jSL"/>
+                        <outlet property="box6" destination="bHS-qq-P6f" id="Vbk-Sj-qAR"/>
+                        <outlet property="box7" destination="MjL-jv-Y4l" id="MDT-2y-4a5"/>
+                        <outlet property="box8" destination="LkR-Fx-Aay" id="Vmp-MH-W5S"/>
+                        <outlet property="box9" destination="5RE-ks-5rB" id="b3z-Jn-1Fo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dYu-L3-wgz">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="pMW-lN-oXy"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="4xG-qX-Fi5">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="bUN-UW-ipw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="iz1-PA-RGd">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="oYk-TV-td9"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="lfk-mu-Qaf">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="hJc-UE-eHY"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="6XX-OZ-gzm">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="LSb-eA-ICN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="uqo-aK-7YL">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="qae-ur-bYQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Kpz-B9-YoP">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="9Zo-VQ-v6o"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="W2r-OR-Ke0">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="TyS-jF-Xyx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Ron-rW-VdJ">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="zH8-DY-ozN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mUC-pe-oJg">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="XqD-nd-5kf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mXm-ng-rla">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="gJm-xv-NbT"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Jrf-cV-fiP">
+                    <connections>
+                        <action selector="addTap:" destination="BYZ-38-t0r" id="xJy-EW-0On"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B6C0EC41BD436AA00E3D93E /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6C0EC31BD436AA00E3D93E /* NetworkOperation.swift */; settings = {ASSET_TAGS = (); }; };
 		1B9567F01BCAFCBB0022F6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9567EF1BCAFCBB0022F6E7 /* AppDelegate.swift */; };
 		1B9567F21BCAFCBB0022F6E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9567F11BCAFCBB0022F6E7 /* ViewController.swift */; };
 		1B9567F51BCAFCBB0022F6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9567F31BCAFCBB0022F6E7 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B6C0EC31BD436AA00E3D93E /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		1B9567EC1BCAFCBB0022F6E7 /* AuTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9567EF1BCAFCBB0022F6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B9567F11BCAFCBB0022F6E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B6C0EC01BD435C900E3D93E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B6C0EC31BD436AA00E3D93E /* NetworkOperation.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		1B9567E31BCAFCBB0022F6E7 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		1B9567EE1BCAFCBB0022F6E7 /* AuTouch */ = {
 			isa = PBXGroup;
 			children = (
+				1B6C0EC01BD435C900E3D93E /* Models */,
 				1B9567EF1BCAFCBB0022F6E7 /* AppDelegate.swift */,
 				1B9567F11BCAFCBB0022F6E7 /* ViewController.swift */,
 				1B9567F31BCAFCBB0022F6E7 /* Main.storyboard */,
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9567F21BCAFCBB0022F6E7 /* ViewController.swift in Sources */,
+				1B6C0EC41BD436AA00E3D93E /* NetworkOperation.swift in Sources */,
 				1B9567F01BCAFCBB0022F6E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +298,7 @@
 				1B9568001BCAFCBB0022F6E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
