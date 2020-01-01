@@ -47,7 +47,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addTap(sender: AnyObject) {
-        let networkOperation = NetworkOperation(url: touchURL!)
+        let networkOperation = NetworkOperation(
+            url: touchURL!,
+            authToken: UIDevice.currentDevice().identifierForVendor!.UUIDString
+        )
         
         let boxView = sender.view as! UILabel
         if let index = boxes.indexOf(boxView) {

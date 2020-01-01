@@ -14,11 +14,13 @@ class NetworkOperation {
     lazy var session: NSURLSession =
         NSURLSession(configuration: self.config)
     let queryURL: NSURL
+    let authToken: String
     
     typealias JSONDictionaryCompletion = [String: AnyObject]? -> Void
     
-    init(url: NSURL) {
+    init(url: NSURL, authToken: String) {
         self.queryURL = url
+        self.authToken = authToken
     }
     
     func post(params: Dictionary<String, AnyObject>) -> Void {
@@ -30,6 +32,7 @@ class NetworkOperation {
             request.HTTPMethod = "POST"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("application/json", forHTTPHeaderField: "Accept")
+            request.addValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
         } catch {
             print("Error:\n \(error)")
             return
